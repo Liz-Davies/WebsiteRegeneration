@@ -1,0 +1,11 @@
+{
+  "name": "regenerate",
+  "version": "1.0.0",
+  "description": "Regenerate a resume index page from a json file and template. Some or all of this code may be reused for a server in future. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+,"regen":"regenerate"  },
+  "author": "Sarah Elizabeth \"Liz\" Davies",
+  "license": "ISC"
+}

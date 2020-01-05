@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<head>
+  <!--favicon-->
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <!--Original template provided by Bernard Laveaux-->
+  <!-- include LogoFont -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <!-- include Open Sans font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <!-- icon font-->
+  <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+  <!-- include Bootstrap -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+  <!-- include Bootstrap JS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/df249601da.js" crossorigin="anonymous"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="assets/style.css" rel="stylesheet">
+  <link href="assets/printStyle.css" rel="stylesheet" media="print"/>
+  <!-- <script src="assets/js/meter.js"></script> -->
+  <script src ="assets/js/scroll.js"></script>
+  <!-- <script src ="assets/js/hex-pie.js"></script> -->
+  <!--icons-->
+
+  <title>Liz Davies</title>
+</head>
+<body data-spy="scroll" data-target="#main-navbar" data-offset="58">
+  <!-- define navbar -->
+    <nav id="main-navbar" class="navbar navbar-expand-md navbar-teal navbar-dark fixed-top d-print-none">
+        <img class="navbar-brand" src="assets/LizFlowerIcon1.png" href="#"/>
+        <button class="navbar-toggler navbar-toggler-styling" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-plus-square"></i>
+            <!-- <svg class = "navbar-icon" width="20" height="20">
+                <line x1="5" y1="10" x2="15" y2="10" style="stroke:#fafafa;stroke-width:2" />
+                <line x1="10" y1="5" x2="10" y2="15" style="stroke:#fafafa;stroke-width:2" />
+            </svg> -->
+        </button>
+        <div class = "collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#profile">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#vol">Volunteering</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- define initial title pane -->
+    <div class="title">
+        <div class="title-overlay">
+            <div id="print-contact-left" class="flex-column d-none d-print-inline-flex print-contact contact-left">
+                {{#if about.phone}}<h4 id="printLocation">{{#if about.location}} <span class="printContactInfo"> {{about.location}} </span><i class="fas fa-map-marker-alt"></i>{{/if}}<span class="printContactInfo"> {{about.phone}} </span><i class="fas fa-phone-alt"></i></h4>{{/if}}
+                {{#if about.email}}<h4 id="printEmail"><span class="printContactInfo">{{about.email}} </span><i class="fas fa-envelope"></i>{{/if}}</h4>
+            </div>
+            <img class="title-branding d-inline-flex" src="assets/SarahElizabethFlowerIcon.svg"/>
+            <div id="print-contact-right" class="flex-column d-none d-print-inline-flex print-contact contact-right">
+                {{#if about.linkedin}}<h4 id="printLinkedin"><i class="fab fa-linkedin"></i><span class="printContactInfo"> {{about.linkedin}}</span></h4>{{/if}}
+                {{#if about.github}}<h4 id="printGit"><i class="fab fa-github"></i><span class="printContactInfo"> {{about.github}}</span></h4>{{/if}}
+            </div>
+        </div>
+    </div>
+
+    <!-- define profile pane -->
+    <div id="profile" class="profile">
+        <div class="container">
+            <h2 class="d-print-none">About me</h2>
+            <hr class="d-print-none">
+            <div class="row justify-content-around align-items-center">
+                <img src="assets/ProfilePhotoFlower.png" alt="Liz Davies" class="col-xs-12 col-sm-16 col-md-4 d-print-none profile-image">
+                <div class="bio col-sm-12 col-md-8">
+                    <p>
+                        {{about.about_me}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="education" class="education">
+            <div class="container">
+                <div class=" header-row row">
+                    <h2>Education</h2>
+                </div>
+                <div class="schools d-flex flex-row align-items-stretch">
+                {{#each education as |school|}}
+                    {{> education school}}
+                {{/each}}
+                </div>
+            </div>
+        </div>
+        <div id="experience" class="experiences">
+            <div class="container">
+                <div class=" header-row row">
+                    <h2>Experience</h2>
+                </div>
+                {{#each work as |workEntry|}}
+                    {{> position workEntry}}
+                {{/each}}
+            </div>
+        </div>
+        <!-- define experience pane -->
+        <div id="vol" class="vol">
+            <div class="container">
+                <div class="header-row row">
+                    <h2>Volunteering & Extra-Curriculars</h2>
+                    <hr>
+                </div>
+                {{#each extraCurriculars}}
+                    {{> volunteering}}
+                {{/each}}
+                <!-- row of experiences -->
+            </div>
+        </div>
+        <div id="skills" class="skills">
+            <div class="container">
+                <div class="header-row row">
+                    <h2>Skills</h2>
+                </div>
+                <p class="lead d-print-none">
+                    Estimations based on approximate complexity of understanding, and time spent practicing.
+                </p>
+                <div class="hex-row">
+                    {{#each skills as |skill|}}
+                        {{# hex-pie skill.confidence skill.skill skill.info}}{{/hex-pie}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <div id="interests" class="interests">
+            <div class="container">
+                <div class="header-row row">
+                    <h2>Interests</h2>
+                </div>
+                <div class="hex-row">
+                    {{#each interests}}
+                        {{>interest}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- define contact footer pane -->
+  <div id="contact" class="contact d-print-none">
+    <div class="container">
+      <h2>Contact</h2>
+      {{#if about.email}}
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <a href="mailto:{{about.email}}">
+            <!-- <img src="assets/contact/at.svg"> -->
+            <i class="fas fa-at"></i>
+            <span>{{about.email}}</span>
+          </a>
+        </div>
+        {{/if}}
+        {{#if about.github}}
+        <div class="col-md-12 col-lg-6">
+          <a href="{{about.github}}">
+            <!-- <img src="assets/contact/github-square.svg"> -->
+            <i class="fab fa-github"></i>
+            <span>{{about.github}}</span>
+          </a>
+        </div>
+        {{/if}}
+        {{#if about.twitter}}
+        <div class="col-md-12 col-lg-6">
+          <a href="{{about.twitter}}">
+            <!-- <img src="assets/contact/twitter-square.svg"> -->
+            <i class="fab fa-twitter"></i>
+            <span>{{about.twitter}}</span>
+          </a>
+        </div>
+        {{/if}}
+        {{#if about.linkedin}}
+        <div class="col-md-12 col-lg-6">
+          <a href="{{about.linkedin}}">
+            <!-- <img src="assets/contact/linkedin-square.svg"> -->
+            <i class="fab fa-linkedin"></i>
+            <span>{{about.linkedin}}</span>
+          </a>
+        </div>
+        {{/if}}
+    </div>
+  </div>
+</div>
+  <script>
+$(function(){
+    $(".hex-name-plate").tooltip({
+        container:"body",
+        boundary:"window"
+    });
+    $('.hex-name-plate').on('showing.bs.tooltip', function () {
+         console.log("Attempted to open")
+    });
+    $('.hex-name-plate').on('hover',function(){
+        console.log("hover");
+    });
+});
+
+</script>
+</body>
