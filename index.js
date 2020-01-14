@@ -11,7 +11,7 @@ Handlebars.registerHelper("hex-pie", function(percent,name="",moreInfo="") {
             rotateLeft = 180;
             rotateRight = ((percent-50)/100) * 180;
         }//<i class="text-muted text-small fas fa-info-circle"></i>
-        tooltip = ` data-toggle="tooltip" data-content="${moreInfo}" data-placement="top"`
+        tooltip = ` data-toggle="tooltip" title="${moreInfo}" data-placement="top"`
         popover = ` <a tabindex='0' class="hex-popover hex-info" data-placement="top" role='button' data-trigger="focus" data-container="body" data-toggle='popover' data-content='${moreInfo}'><i class="fas fa-info-circle"></i></a>`
         ret =  `
 <div class="hex hex-pie">

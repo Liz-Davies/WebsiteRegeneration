@@ -3,14 +3,14 @@
         "email": "SarahDavies4@cmail.carleton.ca",
         "name": "Sarah Elizabeth \"Liz\" Davies",
         "location": "Ottawa, ON",
-        "about_me": "Developer, musician, and life-long learner. I came to computer science as a second degree, and have made myself at home in the field. As a new grad I am looking for a place where I can continue to grow and learn from my peers.",
+        "about_me": "Developer, musician, and life-long learner. I came to computer science as a second degree, and have made myself at home in the field. As I am approaching graduation I am looking for a place where I can continue to grow and learn from my peers.",
         "github": "https://github.com/Liz-Davies",
         "phone": "613-581-0224",
         "linkedin": "https://linkedin.com/in/liz-davies/"
     },
     "education": [
         {
-            "endDate": "2019-12",
+            "endDate": "2020-05",
             "startDate": "2016-09",
             "location": "Carleton University",
             "accreditation": "Bachelor of Computer Science"

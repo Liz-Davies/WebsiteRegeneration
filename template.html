@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <head>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
   <!--favicon-->
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
@@ -10,27 +15,19 @@
   <!-- include Open Sans font -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
   <!-- icon font-->
-  <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+   <script src="https://kit.fontawesome.com/c4f9a05341.js" crossorigin="anonymous"></script>
+
   <!-- include Bootstrap -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
-  <!-- include Bootstrap JS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  <!-- include Bootstrap JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/df249601da.js" crossorigin="anonymous"></script>
+
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="assets/style.css" rel="stylesheet">
-  <link href="assets/printStyle.css" rel="stylesheet" media="print"/>
-  <!-- <script src="assets/js/meter.js"></script> -->
   <script src ="assets/js/scroll.js"></script>
-  <!-- <script src ="assets/js/hex-pie.js"></script> -->
-  <!--icons-->
+  <link href="assets/printStyle.css" rel="stylesheet" media="print"/>
 
   <title>Liz Davies</title>
 </head>
@@ -61,6 +58,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#interests">Interests</a>
                 </li>
             </ul>
         </div>
@@ -208,15 +208,9 @@
 </div>
   <script>
 $(function(){
-    $(".hex-name-plate").tooltip({
+    $("[data-toggle='tooltip']").tooltip({
         container:"body",
-        boundary:"window"
-    });
-    $('.hex-name-plate').on('showing.bs.tooltip', function () {
-         console.log("Attempted to open")
-    });
-    $('.hex-name-plate').on('hover',function(){
-        console.log("hover");
+        boundary:"scrollParent"
     });
 });
 
