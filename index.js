@@ -33,7 +33,7 @@ Handlebars.registerHelper("hex-pie", function(percent,name="",moreInfo="") {
 
   return ret;
 });
-const months = ["Jan","Feb","Mar","Apr","May","June","July","August","Sept","Oct","Nov","Dec"];
+const months = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sept","Oct","Nov","Dec"];
 Handlebars.registerHelper("monthRange",function(entry){
     var ret = "";
     var start = "";
@@ -60,10 +60,10 @@ Handlebars.registerHelper("monthRange",function(entry){
 
 });
 
-Handlebars.registerPartial("position",fs.readFileSync("position.html","utf8"));
-Handlebars.registerPartial("education",fs.readFileSync("education.html","utf8"));
-Handlebars.registerPartial("volunteering",fs.readFileSync("volunteering.html","utf8"));
-Handlebars.registerPartial("interest",fs.readFileSync("interest.html","Utf8"));
+Handlebars.registerPartial("position",fs.readFileSync("partials/position.html","utf8"));
+Handlebars.registerPartial("education",fs.readFileSync("partials/education.html","utf8"));
+Handlebars.registerPartial("volunteering",fs.readFileSync("partials/volunteering.html","utf8"));
+Handlebars.registerPartial("interest",fs.readFileSync("partials/interest.html","Utf8"));
 
 var template = Handlebars.compile(fs.readFileSync("template.html","utf8"));
 fs.readFile('resume.json','utf8',function(err,contents){
