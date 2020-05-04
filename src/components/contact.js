@@ -15,8 +15,7 @@ const CONTACT_METHOD_ICONS={
     email:faEnvelopeSquare,
     phone:faPhoneSquare,
     github:faGithubSquare,
-    twitter:faTwitterSquare,
-    website:faSquare
+    twitter:faTwitterSquare
 }
 const SORT_PRIORITY={
     email:1,
@@ -26,7 +25,7 @@ const phoneRegex = /^\+?(\d{1})?[ -]*\(?(\d{3})\)?[ -]*(\d{3})[ -]*(\d{4})$/
 
 function formatPhoneForLink(phoneNum){
     if(phoneNum){
-        return phoneNum.replace(phoneRegex,'tel:+$1$2$3$4');
+        return phoneNum.replace(phoneRegex,'tel:$1-$2-$3-$4');
     }
     return "";
 }
@@ -84,7 +83,7 @@ class ContactPanel extends React.Component{
         return <a href={contact}>{formatWebForText(contact)} <FontAwesomeIcon icon={faExternalLinkAlt}/></a>;
     }
     render(){
-        const { revealed,method,contact } = this.props;
+        const { revealed } = this.props;
         const link = this.renderPhone() || this.renderEmail() || this.renderWeb();
         return (
             <div className={ "contact-panel " + (revealed ? "revealed" : "") }>
@@ -97,7 +96,6 @@ class ContactCardPrint extends React.Component{
     constructor(props){
         super(props);
         const webLocation = [["website",window.location.href.replace(/#.*$/,'')]];
-        console.log(faSquare);
         this.contacts = props.contact ? props.contact.concat(webLocation) : webLocation;
     }
     render(){
@@ -118,8 +116,8 @@ class ContactCardPrint extends React.Component{
 export class ContactCard extends React.Component{
     constructor(props){
         super(props);
-        this.prioritizedMethods = props.contact ? Object.entries(props.contact).
-            sort(([method1],[method2])=>(SORT_PRIORITY[method2]||0)-(SORT_PRIORITY[method1]||0)):[];
+        this.prioritizedMethods = props.contact ? Object.entries(props.contact)
+            .sort(([method1],[method2])=>(SORT_PRIORITY[method2]||0)-(SORT_PRIORITY[method1]||0)):[];
         this.state={
             revealed:null,
             print:window.matchMedia("print").matches

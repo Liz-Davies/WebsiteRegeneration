@@ -1,6 +1,5 @@
 import React from 'react';
 import './hex-style.css';
-import {ReactComponent as HexagonMask} from './hexagon.svg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons';
