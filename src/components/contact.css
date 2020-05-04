@@ -1,0 +1,85 @@
+.contact-card a,.contact-card button{
+    font-size: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px;
+    line-height: 1.33em;
+    height: 1.33em;
+    width: 1.33em;
+    text-align: center;
+    color:var(--background,white);
+    background: transparent;
+    border:none;
+}
+.contact-card a.toggled,.contact-card button.toggled{
+    background:var(--background,white);
+    color:var(--primary);
+}
+.contact-card{
+    padding:8px;
+    min-width:250px;
+    border: 2px solid var(--primary);
+    display:flex;
+}
+.contact-frame{
+    min-width:250px;
+    position:relative;
+}
+.contact-frame > .contact-card{
+    position:relative;
+    background:var(--background,white);
+    z-index:1;
+}
+.contact-frame > .contact-panel{
+    position:absolute;
+    top:10px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    transition: top 0.4s linear;
+    text-align:center;
+    padding:5px;
+    color:var(--background,white);
+}
+.contact-frame > .contact-card,.contact-frame > .contact-panel{
+    border-radius:8px;
+    background:var(--primary);
+    border: 2px solid var(--background,white);
+
+}
+
+.contact-card-print {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    justify-content: space-around;
+    width:100%;
+    align-self: right;
+    font-size: 14px;
+    background: var(--colored-screen);
+    padding: 3px 0px;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    right:0px
+
+}
+.contact-card-print.col{
+    height:100%;
+    flex-direction: column;
+}
+.contact-card-print > *{
+    display:block;
+    padding: 2px 2px;
+}
+.contact-panel.revealed{
+    top:-30px;
+}
+.contact-panel a{
+    /* width: 100%; */
+    display:block;
+    text-align:center;
+    color:var(--background,white);
+    /* color:var(--background,white); */
+    text-decoration: none;
+}

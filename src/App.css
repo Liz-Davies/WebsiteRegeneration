@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+    --primary: #ac071c;
+    --secondary: #677079;
+    /* --primary: #315171;
+   --secondary: #687d92; */
+    /* --primary:#687d92;
+    --secondary:#8c8a87; */
+    --dark:#1a1b17;
+    --shadow:#0d1c27;
+    --light:#cacaca;
+    --background:#ffffff;
+    --dark-screen:#000000e6;
+    --light-screen:#fffffa36;
+    --colored-screen:#ac071c59;
+    --tile-img:url('./TileableWatermelon2.png');
+    --title-img:url('./components/close-up-concrete-flora-growth.jpg');
+    --display-font: 'Bebas Neue', cursive;
+    /* 'Unica One', Helvetica, Sans-Serif; */
+
+}
+/*black and pink dark mode*/
+body.watermelon-light{
+    --primary:#ff4a4a;
+    --secondary:#4eb310;
+    --dark:#0d170e;
+    --shadow:#0d1c27;
+    --light:#88888870;
+    --background:#ffffff;
+    --title-img:var(--primary);
+    --tile-img:url('./TileableWatermelon2.png');
+
+}
+@media only screen{
+    body.dark{
+       --primary: #ad2133;
+       --secondary: #677079;
+        --dark:#ffffff;
+        --shadow:#000;
+        --light:#333333;
+        --background:#1a1b17;
+        --tile-img:url('./TileableWatermelon2.png');
+
+    }
+    body.watermelon-dark{
+        --primary:#ff4a4a;
+        --secondary:#4eb310;
+        --dark:#ffffff;
+        --shadow:#333;
+        --light:#88888870;
+        --background:#212322;
+        --tile-img:url('./TileableWatermelon2.png');
+        --display-font:'Montserrat', 'Helvetica', sans-serif;
+    }
+}
+@media only screen (prefers-color-scheme: dark){
+    /*if prefers dark mode then invert default*/
+    :root{
+       --primary: #ad2133;
+       --secondary: #677079;
+        --dark:#ffffff;
+        --shadow:#333;
+        --light:#88888866;
+        --background:#1a1b17;
+        --tile-img:url('./TileableWatermelon2.png');
+
+    }
+    body.watermelon-light{
+        --primary:#ff4a4a;
+        --secondary:#4eb310;
+        --dark:#ffffff;
+        --shadow:#333;
+        --light:#88888870;
+        --background:#212322;
+        --tile-img:url('./TileableWatermelon2.png');
+
+    }
+    body.dark{
+        --primary: #ac071c;
+        --secondary: #677079;
+        --dark:#1a1b17;
+        --shadow:#0d1c27;
+        --light:#88888866;
+        --background:#ffffff;
+        --colored-screen:#ac071c59;
+        --tile-img:url('./TileableWatermelon2.png');
+        --title-img:url('./components/close-up-concrete-flora-growth.jpg');
+
+    }
+    /*black and pint dark mode*/
+    body.watermelon-dark{
+        --primary:#ff4a4a;
+        --secondary:#4eb310;
+        --dark:#0d170e;
+        --shadow:#0d1c27;
+        --light:#88888870;
+        --background:#ffffff;
+        --title-img:var(--primary);
+        --tile-img:url('./TileableWatermelon2.png');
+
+    }
+}
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredericka+the+Great&family=Lovers+Quarrel&family=Montserrat&family=Princess+Sofia&family=Red+Hat+Text&family=Ruthie&display=swap'); */
+
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Red Hat Text', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Princess Sofia', cursive;
+font-family: 'Ruthie', cursive;
+font-family: 'Lovers Quarrel', cursive;
+*/
+/* font-family: 'Unica One', cursive;
+font-family: 'Noto Sans', sans-serif; */
+
+body{
+    color:var(--dark);
+    background:var(--background);
+    font-family:'Noto sans', 'Helvetica', sans-serif;
+}
+a{
+    color:var(--accent,var(--primary));
+}
+
+
+.App .content{
+    max-width:1024px;
+    margin: 0px 20px 0px 10%;
+    padding: 20px 5px;
+}
+
+.content-section{
+    padding:15px;
+    position:relative;
+}
+.content-section .section-header{
+    margin:-15px -15px 0px -15px;
+}
+.section-header{
+    margin:0px -5px;
+    padding:5px 10px;
+    background:var(--primary);
+}
+.section-title{
+    margin-block-end:0em;
+    margin-block-start:0em;
+    font-family:var(--display-font);
+    color:var(--background);
+    font-weight: normal;
+}
+/*transforms*/
+.recessed-tile{
+    background:var(--tile-img);
+    background-position:center;
+    background-size:8.33%;
+    box-shadow: inset 4px 4px 5px var(--shadow,black);
+    margin-bottom:15px;
+}
+.recessed-tile > *{
+    background:var(--background);
+    box-shadow: 4px 4px 5px var(--shadow,black);
+    margin: 5px 10px;
+}
+.tile-backing{
+    background:#c53b3b;
+}
+.recessed-tile > .row {
+    padding: 10px 15px;
+}
+footer{
+    background:var(--shadow,black);
+    color:var(--light,white);
+    padding:60px 40px;
+}
+.bio .pfp{
+    max-width:150px;
+}
+@media screen and (max-width:1024px){
+    .App .content {
+        margin:0px 20px;
+    }
+}
+#about{
+    background:var(--primary);
+    -webkit-print-color-adjust: exact;
+    color-adjust:exact;
+    color:var(--background);
+}
+#about p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+@media only print{
+    footer{
+        display:none;
+    }
+    body{
+        font-size:12px;
+    }
+    .App > .content{
+        padding: 0px;
+        margin:0px;
+    }
+    .page-title{
+        background-position:center middle;
+    }
+    .content-section > .section-header{
+        padding-bottom:5px;
+        position:absolute;
+        left:0px;
+        top:0px;
+        height:40px;
+        transform-origin: 0 0;
+        transform:rotate(90deg);
+        padding:5px;
+        background:none;
+        color:var(--background);
+        margin:0px;
+    }
+    .section-title{
+        font-size:18px;
+        transform:rotate(180deg);
+        color:var(--background,white);
+        -webkit-print-color-adjust: exact;
+        color-adjust:exact;
+    }
+    .content-section{
+        border:0px solid var(--primary);
+        border-left-width:40px;
+        border-top-width:1px;
+        margin-bottom:1px;
+        padding:10px;
+    }
+
+}

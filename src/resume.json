@@ -1,0 +1,353 @@
+{
+    "about": {
+        "name": "Liz Davies",
+        "title":"Developer",
+        "proper_name":"Sarah Elizabeth Davies",
+        "location": "Ottawa, ON",
+        "about_me": "Already a Bachelor of Music graduate and soon-to-be Bachelor of Computer Science graduate I am looking for my next great adventure. Busker, opera singer, educator, and full-stack developer, it's been an adventure already, but I am looking forward to digging into development more and learning new technologies and perspectives. ",
+        "contact":{
+            "github":"https://github.com/Liz-Davies",
+            "email":"saraheedavies@gmail.com",
+            "phone": "613-581-0224",
+            "linkedin": "https://linkedin.com/in/liz-davies"
+        }
+    },
+    "education": [
+        {
+            "endDate": "2020-05",
+            "startDate": "2016-09",
+            "location": "Carleton University",
+            "accreditation": "Bachelor of Computer Science"
+        },
+        {
+            "endDate":"2016-05",
+            "startDate":"2011-09",
+            "location": "Mount Allison Univeristy",
+            "accreditation":"Bachelor of Music"
+        },
+        {
+            "endDate":"2010-06",
+            "startDate":"2005-09",
+            "location":"Glebe Collegiate Diploma",
+            "accreditation":"High School"
+        }
+    ],
+
+    "work": [
+        {
+            "positions":[
+                {
+                    "endDate": "2019-08",
+                    "experience": [
+                        "Worked independantly updating and creating in-house tools",
+                        "Created projects using Python, Django, Bash Scripting, and Docker"
+                    ],
+                    "title": "Developer Co-op",
+                    "startDate": "2019-05"
+                }
+            ],
+            "location": "Government of Canada"
+        },
+        {
+            "positions":[
+                {
+                    "endDate": "2019-04",
+                    "experience": [
+                        "Worked with supervision to create update and improve both in-house and client tools",
+                        "Created documentation to facilitate project development, setup, and deployment",
+                        "Worked on full-stack web projects using, Java, Spring, Javascript (Angular), as well as updating/creating the HTML and CSS",
+                        "Took initiative when workload was low to research future projects to make the most out of every minute"
+                    ],
+                    "title": "Junior Software Developer Co-op",
+                    "startDate": "2018-09"
+                }
+            ],
+            "location": "2Keys"
+        },
+        {
+            "positions":[
+                {
+                    "endDate": "2018-04",
+                    "experience": [
+                        "Helped lost students gain a better understanding of the class concepts",
+                        "Graded exams and assignments in a timely manner"
+                    ],
+                    "title": "Teachers Assistant",
+                    "startDate": "2018-01"
+                }
+            ],
+            "location": "Carleton University"
+        },
+        {
+            "positions":[
+                {
+                    "title": "Saturday Clubs Instructor",
+                    "startDate": "2017-09",
+                    "endDate": "2017-10",
+                    "experience": [
+                        "Designed lessons on the topic of coding, starting with scratch then introducing python",
+                        "Over the course of 5 weekends, taught, guided, and supervised girls with the goal of inspiring them toward a life as a programmer"
+                    ]
+                },
+                {
+                    "endDate": "2017-08",
+                    "experience": [
+                        "Designed lessons in a variety of topics in various areas of STEM",
+                        "Took initiative to learn new topics and technologies that would appeal to and inspire kids",
+                        "Taught and supervised children of various ages with the goal of inspiring a love of STEM subjects"
+                    ],
+                    "title": "Camp Instructor",
+                    "startDate": "2017-05"
+                }
+            ],
+            "location": "Virtual Ventures"
+        },
+
+        {
+            "positions":[
+                {
+                    "endDate": "2016-09",
+                    "experience": [
+                        "Innovated and adapted to maximize profits",
+                        "Interacted with customers and clients in a positive and professional manner"
+                    ],
+                    "title": "Classical Singer",
+                    "startDate": "2013-04"
+                }
+            ],
+            "location": "Busker"
+        },
+        {
+            "positions":[
+                {
+                    "endDate": "2012-08",
+                    "experience": [
+                        "Catalogued and processed micro-chip samples",
+                        "Processed sample in a timely and precise manner",
+                        "Safely handled hazardous chemicals"
+                    ],
+                    "title": "Sample Prep Assistant",
+                    "startDate": "2012-04"
+                },
+                {
+                    "title": "Sample Prep Assistant",
+                    "startDate": "2011-04",
+                    "endDate":"2011-08",
+                    "experience": [
+                        "Same as above"
+                    ]
+                }
+            ],
+            "location": "Chipworks"
+        }
+    ],"extraCurriculars": [
+        {
+            "positions":[
+                {
+                    "title":"Attendee",
+                    "startDate":"2020-01",
+                    "experience":[]
+                },
+                {
+                    "title":"Attendee",
+                    "startDate":"2018-01",
+                    "experience":[]
+                },
+                {
+                    "title":"Attendee",
+                    "startDate":"2017-01",
+                    "experience":[]
+                }
+            ],
+            "location":"Canadian University Software Engineering Conference"
+        },
+        {
+            "positions":[
+                {
+                    "title":"Attendee",
+                    "startDate":"2019-11",
+                    "experience":[]
+                },
+                {
+                    "title":"Attendee",
+                    "startDate":"2017-11",
+                    "experience":[]
+                }
+            ],
+            "location":"Canadian Celebration of Women in Computing"
+        },
+        {
+            "positions":[
+                {
+                    "experience": [
+                        "Worked as a part of a team to solve challenges and capture flags"
+                    ],
+                    "title": "Competitor",
+                    "startDate": "2019-06"
+                }
+            ],
+            "location": "Hack 4ll The Things 2.3 (CTF)"
+        },
+        {
+            "positions":[
+                {
+                    "experience": [
+                        "Listened to pitches for Application focused businesses",
+                        "Provided kind and constructive criticism"
+                    ],
+                    "title": "Judge",
+                    "startDate": "2018-05"
+                }
+            ],
+            "location": "Technovation"
+        },
+        {
+            "positions":[
+                {
+
+                    "experience": [
+                        "Arranging talks and workshops to enrich Carleton Computer Science Students"
+                    ],
+                    "title": "Interim Vice President of Academics",
+                    "startDate": "2018-01",
+                    "endDate":"2018-05"
+                },
+                {
+                    "experience": [
+                        "Participating and on the spot volunteering at events"
+                    ],
+                    "title": "Member",
+                    "startDate": "2016-09",
+                    "endDate":"2020-05",
+                    "location": "Carleton Computer Science Society"
+                }
+            ],
+            "location": "Carleton Computer Science Society"
+        },
+        {
+            "positions":[
+                {
+                    "endDate": "2018-04",
+                    "experience": [
+                        "Honing and expanding my leadership skills"
+                    ],
+                    "title": "Developing Leader",
+                    "startDate": "2018-01"
+                }
+            ],
+            "location": "Mindtrust Leadership Development Program"
+        },
+        {
+            "positions":[
+                {
+                    "experience": [
+                        "Worked as a member of a team to create a game overnight",
+                        "Learned new technologies from scratch like Godot Engine and GDScript",
+                        "Was on hand as a first-aid certified volunteer in case of emergency"
+                    ],
+                    "title": "Volunteer and Participant",
+                    "startDate": "2017-11"
+                }
+            ],
+            "location": "Game Jam"
+        }
+    ],
+
+    "skills":[
+        {
+            "percent": 80,
+            "info": "Worked with git in a professional, academic, and personal capacity",
+            "name": "Git"
+        },
+        {
+            "percent": 70,
+            "info": "Worked with JavaScript in front end frameworks like Angular as well as backend work like Node.js",
+            "name": "JavaScript"
+        },
+        {
+            "percent": 80,
+            "info": "Worked with HTML in personal, professional, and academic contexts",
+            "name": "HTML"
+        },
+        {
+            "percent": 80,
+            "info": "How do you like my hex-pies?",
+            "name": "CSS"
+        },
+        {
+            "percent": 70,
+            "info": "Worked with Java in professional, academic, and personal contexts, including full-stack web development with Spring.",
+            "name": "Java"
+        },
+        {
+            "percent": 60,
+            "info": "Learned JUnit while taking a class on software quality assurance",
+            "name": "JUnit"
+        },
+        {
+            "percent": 60,
+            "info": "Learned Cucumber while taking a class on software quality assurance",
+            "name": "Cucumber"
+        },
+        {
+            "percent": 65,
+            "info": "Worked with Python creating in-house tools and have spent time learning about frameworks like Django",
+            "name": "Python"
+        },
+        {
+            "percent": 35,
+            "info": "Worked with C in academic contexts while learning about operating systems",
+            "name": "C"
+        },
+        {
+            "percent": 35,
+            "info": "Worked with C++ in academic contexts",
+            "name": "C++"
+        },
+        {
+            "percent":45,
+            "name":"SQL",
+            "info":"Studied and used SQLite and PostgreSQL in academic contexts"
+        },
+        {
+            "percent":45,
+            "name":"LDAP",
+            "info":"Worked with ldap protocols in a professional environment working with OpenDj"
+        },
+        {
+            "percent":45,
+            "name":"MongoDB",
+            "info":"Worked with Mongo and Java an a professional environment and Mongo and Node in academic contexts"
+        }
+    ],
+    "interests":[
+        {
+            "name":"ukulele",
+            "icon":"guitar"
+        },
+        {
+            "name":"video games",
+            "icon":"gamepad"
+        },
+        {
+            "name":"tabletop games",
+            "icon":"dice-d20"
+        },
+        {
+            "name":"independant learning",
+            "icon":"laptop-code"
+        },
+        {
+            "name":"leadership development",
+            "icon":"users"
+        },
+        {
+            "name":"sign language",
+            "icon":"american-sign-language-interpreting"
+        },
+        {
+            "name":"opera",
+            "icon": "theater-masks"
+        }
+    ]
+}

@@ -3,7 +3,7 @@
         "email": "SarahDavies4@cmail.carleton.ca",
         "name": "Sarah Elizabeth \"Liz\" Davies",
         "location": "Ottawa, ON",
-        "about_me": "Developer, musician, and life-long learner. I came to computer science as a second degree, and have made myself at home in the field. As I am approaching graduation I am looking for a place where I can continue to grow and learn from my peers.",
+        "about_me": "Already a Bachelor of Music graduate and soon-to-be Bachelor of Computer Science graduate I am looking for my next great adventure. Busker, opera singer, educator, and full-stack developer, it's been an adventure already, but I am looking forward to digging into development more and learning new technologies and perspectives. ",
         "github": "https://github.com/Liz-Davies",
         "phone": "613-581-0224",
         "linkedin": "https://linkedin.com/in/liz-davies/"
@@ -105,7 +105,7 @@
                     "startDate": "2013-04"
                 }
             ],
-            "location": "Musician"
+            "location": "Busker"
         },
         {
             "positions":[
@@ -116,7 +116,7 @@
                         "Processed sample in a timely and precise manner",
                         "Safely handled hazardous chemicals"
                     ],
-                    "title": "Depot Specialist",
+                    "title": "Sample Prep Assistant",
                     "startDate": "2012-04"
                 },
                 {
@@ -124,7 +124,7 @@
                     "startDate": "2011-04",
                     "endDate":"2011-08",
                     "experience": [
-                        "Same as Depot Specialist"
+                        "Same as above"
                     ]
                 }
             ],
@@ -134,12 +134,32 @@
         {
             "positions":[
                 {
-                    "title":"Conference Attendee",
+                    "title":"Attendee",
+                    "startDate":"2020-01",
+                    "experience":[]
+                },
+                {
+                    "title":"Attendee",
+                    "startDate":"2018-01",
+                    "experience":[]
+                },
+                {
+                    "title":"Attendee",
+                    "startDate":"2017-01",
+                    "experience":[]
+                }
+            ],
+            "location":"Canadian University Software Engineering Conference"
+        },
+        {
+            "positions":[
+                {
+                    "title":"Attendee",
                     "startDate":"2019-11",
                     "experience":[]
                 },
                 {
-                    "title":"Conference Attendee",
+                    "title":"Attendee",
                     "startDate":"2017-11",
                     "experience":[]
                 }
@@ -285,7 +305,7 @@
         },
         {
             "confidence":45,
-            "skill":"MongoDJ",
+            "skill":"MongoDB",
             "info":"Worked with Mongo and Java an a professional environment and Mongo and Node in academic contexts"
         }
     ],
@@ -313,6 +333,10 @@
         {
             "title":"sign language",
             "icon":"fas fa-american-sign-language-interpreting"
+        },
+        {
+            "title":"opera",
+            "icon": "fas fa-theater-masks"
         }
     ]
 }

@@ -1,0 +1,67 @@
+.logo.colored .logo-apperature{
+    fill:var(--primary);
+    stroke:var(--dark);
+}
+.logo.colored .logo-text{
+    fill:var(--background);
+    stroke:var(--primary);
+    stroke:var(--dark);
+}
+.logo{
+    fill: var(--dark);
+}
+.inverse .logo, .logo.inverse{
+    fill:var(--background);
+}
+
+.logo.rainbow .logo-apperature *:nth-child(1){
+    stroke:#cc0909;
+}
+.logo.rainbow .logo-apperature *:nth-child(2){
+    stroke:#ff8600;
+}
+.logo.rainbow .logo-apperature *:nth-child(3){
+    stroke:#fff114;
+}
+.logo.rainbow .logo-apperature *:nth-child(4){
+    stroke:#0fb30f;
+}
+.logo.rainbow .logo-apperature *:nth-child(5){
+    stroke:#087dd6;
+}
+.logo.rainbow .logo-apperature *:nth-child(6){
+    stroke:#8f23af;
+}
+.logo.rainbow .logo-text{
+    fill:url(#rainbow-animated);
+}
+#rainbow-animated{
+    values:'red;blue;'
+}
+.logo.rainbow .stop1{
+    stop-color:#ff2400;
+}
+.logo.rainbow .stop2{
+    stop-color: #e81d1d;
+}
+.logo.rainbow .stop3{
+    stop-color: #e8b71d;
+}
+.logo.rainbow .stop4{
+    stop-color: #e3e81d;
+}
+.logo.rainbow .stop5{
+    stop-color: #1de840;
+}
+.logo.rainbow .stop6{
+    stop-color: #1ddde8;
+}
+.logo.rainbow .stop7{
+    stop-color: #2b1de8;
+}
+.logo.rainbow .stop8{
+    stop-color: #dd00f3;
+}
+.logo.rainbow .stop9{
+    stop-color: #dd00f3;
+}

@@ -1,0 +1,11 @@
+
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+    <!--<clipPath id="hexagon-clip">
+        <path stroke="#000000" stroke-width="1.0" stroke-linejoin="square" stroke-linecap="butt" d="m80.300545 0.69561076l69.07882 39.669685l-0.14195251 79.58977l-69.22033 39.669678l-69.07882 -39.669678l0.14195538 -79.58977z" fill-rule="evenodd"/>
+    </clipPath>-->
+        <clipPath id="hexagon-clip" clipPathUnits="objectBoundingBox">
+            <path d="m0.5 0 l 0.68301270189 -0.25 l 0 -0.5 l -0.68301270189 -0.25 l -0.68301270189 0.25 l 0 0.5z"/>
+        </clipPath>
+    </defs>
+</svg>

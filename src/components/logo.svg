@@ -1,0 +1,67 @@
+<svg version="1.1" viewBox="0.0 0.0 240.0 240.0" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="tree-point-gradient" x1="0" x2="0" y1="0" y2="1">>
+            <stop class="stop1" offset="0%"/>
+            <stop class="stop2" offset="50%"/>
+            <stop class="stop3" offset="100%"/>
+        </linearGradient>
+        <linearGradient id="six-point-gradient" x1="0" x2="0" y1="0" y2="1">
+            <stop class="stop1" offset="0%"/>
+            <stop class="stop2" offset="16.67%"/>
+            <stop class="stop3" offset="33.33%"/>
+            <stop class="stop4" offset="50%"/>
+            <stop class="stop5" offset="66.67%"/>
+            <stop class="stop6" offset="100%"/>
+        </linearGradient>
+        <linearGradient id="nine-point-gradient" x1="0" x2="0" y1="0" y2="1">
+            <stop class="stop1" offset="0%"/>
+            <stop class="stop2" offset="12.5%"/>
+            <stop class="stop3" offset="25%"/>
+            <stop class="stop4" offset="37.5%"/>
+            <stop class="stop5" offset="50%"/>
+            <stop class="stop6" offset="62.5%"/>
+            <stop class="stop7" offset="75%"/>
+            <stop class="stop8" offset="87.5%"/>
+            <stop class="stop9" offset="100%"/>
+        </linearGradient>
+        <linearGradient id="five-point-gradient" x1="0" x2="0" y1="0" y2="1">
+            <stop class="stop1" offset="0%"/>
+            <stop class="stop2" offset="20%"/>
+            <stop class="stop3" offset="40%"/>
+            <stop class="stop4" offset="60%"/>
+            <stop class="stop5" offset="80%"/>
+            <stop class="stop6" offset="100%"/>
+        </linearGradient>
+        <linearGradient id="rainbow-animated" x1="100%" y1="100%">
+            <stop offset="0%" stop-color="#ff2400">
+                <animate attributeName="stop-color" values=" #ff2400; #e81d1d; #e8b71d; #e3e81d; #1de840; #1ddde8; #2b1de8; #dd00f3; #dd00f3; #ff2400" dur="14s" repeatCount="indefinite" />
+            </stop>
+            <stop offset="100%" stop-color="#e81d1d">
+                <animate attributeName="stop-color" values="#e81d1d; #e8b71d; #e3e81d; #1de840; #1ddde8; #2b1de8; #dd00f3; #dd00f3; #ff2400;#e81d1d" dur="14s" repeatCount="indefinite" />
+            </stop>
+        </linearGradient>
+    </defs>
+    <g>
+        <g class="logo-apperature" id="logo-lens-circle-outer">
+            <path  d="m36.774277 186.67717l-16.196917 -9.236954l-0.078603745 -91.41588l16.181034 -9.236938z" fill-rule="evenodd"/>
+            <path  d="m20.538923 81.300575l-0.09926987 -18.645004l79.126854 -45.776012l16.089706 9.394306z" fill-rule="evenodd"/>
+            <path  d="m103.681 14.626601l16.097656 -9.408062l79.20546 45.63987l-0.09133911 18.631245z" fill-rule="evenodd"/>
+            <path  d="m203.04932 53.183857l16.196854 9.236942l0.07873535 92.23478l-16.181107 9.236938z" fill-rule="evenodd"/>
+            <path  d="m219.28165 158.54811l0.099243164 18.644943l-79.83597 46.185562l-16.089737 -9.394348z" fill-rule="evenodd"/>
+            <path  d="m136.14868 225.36743l-16.097618 9.40802l-79.91467 -46.049225l0.09135437 -18.631287z" fill-rule="evenodd"/>
+        </g>
+        <g class="logo-apperature" id="logo-lens-circle-inner">
+            <path  d="m57.148975 65.14089l-16.321747 9.308823l-0.049419403 67.776054l16.308174 9.308823z" fill-rule="evenodd"/>
+            <path  d="m136.08507 38.13816l-16.222313 -9.480223l-58.71877 33.84523l0.09264755 18.777287z" fill-rule="evenodd"/>
+            <path  d="m198.92372 92.91539l0.09942627 -18.789047l-58.669357 -33.93082l-16.215523 9.468464z" fill-rule="evenodd"/>
+            <path  d="m182.85103 174.85806l16.321716 -9.308823l0.049468994 -68.059525l-16.308197 -9.308823z" fill-rule="evenodd"/>
+            <path  d="m103.92103 201.85472l16.222305 9.480194l58.96427 -33.986923l-0.09265137 -18.777313z" fill-rule="evenodd"/>
+            <path  d="m41.05763 146.91478l-0.099422455 18.789032l58.91481 34.072586l16.215538 -9.468491z" fill-rule="evenodd"/>
+        </g>
+        <g class="logo-text" id="logo-name">
+            <path  d="m72.40422 155.3622l37.196846 0l0 -14.48819l-22.897644 0l0 -56.22047l-14.48819 0z" fill-rule="evenodd"/>
+            <path  d="m112.845146 84.637794l14.48819 0l0 70.70866l-14.48819 0z" fill-rule="evenodd"/>
+            <path  d="m130.74309 155.3622 l 37.196854 0 l 0 -14.48819l-17.3 0l17.3 -56.220467l-37.196854 0l0 14.48819l17.3 0z" fill-rule="evenodd"/>
+        </g>
+    </g>
+</svg>

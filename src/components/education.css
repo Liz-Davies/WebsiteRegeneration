@@ -1,0 +1,32 @@
+.education {
+    display:inline-flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding:10px;
+
+}
+.education .location{
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 20px;
+}
+.education .accreditation{
+    font-weight: bold;
+}
+
+.education .edu-maj + .edu-min:before{
+    content:"\00a0|\00a0";
+}
+
+.accreditation-set{
+    align-content: center;
+    display:flex;
+    justify-content: center;
+}
+@media only print{
+    .education .location{
+        font-size:16px;
+    }
+}

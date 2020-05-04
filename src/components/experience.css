@@ -1,0 +1,122 @@
+li.experience-item{
+    list-style: none;
+}
+.print ul.experience-items{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start:3em;
+}
+.print li.experience-item::before{
+    content: "\2b21";
+    color: var(--dark);
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1.5em;
+}
+li.experience-item{
+    padding-bottom: 5px;
+}
+ul.experience-items{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start:0em;
+}
+.date-range > * {
+    display:inline-block;
+}
+.date-start + .date-end::before{
+    content: "\00a0-\00a0";
+}
+.experience-set{
+    /* background:var(--primary,white);
+    box-shadow: inset 4px 4px 5px var(--shadow,black); */
+    margin-bottom:15px;
+    display:block;
+    /* padding:20px 10px; */
+}
+.experience-set> *{
+    background:var(--background);
+    /* box-shadow: 4px 4px 5px var(--shadow,black); */
+    /* margin: 5px 10px; */
+    min-width: 300px;
+    display:block;
+    /* padding: 20px; */
+}
+.experience .location{
+    color:var(--secondary);
+}
+.experience .location{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    font-size: 20px;
+}
+.experience-date{
+    padding-bottom: 12px;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    min-width:155px;
+    width: 13%;
+    border-right: 1px solid var(--light,lightgrey);
+}
+.experience-title{
+    margin-bottom:8px;
+    display:flex;
+}
+.experience{
+    padding:10px;
+    page-break-inside: avoid;
+}
+.experience-position{
+    display:flex;
+    margin: 0px -10px;
+    page-break-inside: avoid;
+}
+.experience-position > *{
+    padding: 5px 10px;
+}
+.experience-period{
+    padding:10px 0px;
+}
+.experience-set.brief.experience-date{
+    border-bottom:none;
+    padding-bottom: 0px;
+}
+@media screen and (max-width:768px){
+    .experience .date-range .date-end{
+        display:block;
+    }
+    .experience .date-range .date-end::before{
+        content:none;
+    }
+    .experience-date{
+        min-width:75px;
+        width:75px;
+    }
+}
+@media only print{
+    li.experience-item {
+        padding-bottom: 0px;
+    }
+    .experience .location {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        font-size:16px;
+    }
+    .experience-set > * {
+        padding:0px;
+    }
+    .experience-date{
+        min-width:75px;
+        width:75px;
+    }
+    .experience .date-range .date-end{
+        display:block;
+    }
+    .experience .date-range .date-end::before{
+        content:none;
+    }
+    .experience-title{
+        margin:0px;
+    }
+}
