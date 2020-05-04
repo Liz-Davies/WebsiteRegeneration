@@ -4,6 +4,7 @@ import './navbar.css';
 import {Toggle} from './buttons-n-things.js';
 import Logo from './logo.js';
 
+import {getCookie,setCookie} from './cookie-utilities.js'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
@@ -37,8 +38,6 @@ class NavGridButton extends React.Component{
         );
     }
 }
-const DARK_COOKIE_MATCH = /dark_mode=(true|false)/;
-const YEAR_IN_SECONDS = 365 * 24 * 60 * 60;
 export default class Navbar extends React.Component{
     constructor(props){
         super(props)
@@ -47,8 +46,7 @@ export default class Navbar extends React.Component{
         this.offset = window.innerHeight/3;
         this.body_target = document.getElementsByTagName('body')[0];
         //default light/dark
-        let cookieVal = document.cookie.match(DARK_COOKIE_MATCH)
-        this.default_on = cookieVal!==null && cookieVal.length >0 && cookieVal[1] === "true";
+        this.default_on = getCookie('dark_mode') === 'true';
         if(this.default_on) this.body_target.classList.add("dark");
 
         this.state = {
@@ -58,8 +56,8 @@ export default class Navbar extends React.Component{
     collectButtons(){
         //document.getElementsByClassName("content-section")
         let sections = Array.from(document.querySelectorAll(".content-section[data-nav-title]"));
-        return Array.prototype.filter.call(sections,(section)=>section.id!==undefined && section.id !==null).
-            map((section)=>({
+        return Array.prototype.filter.call(sections,(section)=>section.id!==undefined && section.id !==null)
+            .map((section)=>({
                 targetId:section.id,
                 title:section.dataset.navTitle,
             }));
@@ -67,7 +65,7 @@ export default class Navbar extends React.Component{
 
     lightDarkToggle(val){
         var body = document.getElementsByTagName('body')[0];
-        document.cookie=`dark_mode=${val};expires=${(new Date(Date.now() + YEAR_IN_SECONDS)).toUTCString()};path=/`;
+        setCookie('dark_mode',val,'/');
         body.classList.toggle("dark");
     }
     renderButtons(){
