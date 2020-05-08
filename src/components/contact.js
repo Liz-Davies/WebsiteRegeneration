@@ -4,7 +4,7 @@ import './contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelopeSquare,faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare, faLinkedin,faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt,faPaperPlane,faPhone,faSquare} from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt,faPaperPlane,faPhone} from '@fortawesome/free-solid-svg-icons';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 library.add(faEnvelopeSquare,faPhoneSquare,faGithubSquare, faLinkedin,faTwitterSquare,faExternalLinkAlt );
@@ -116,8 +116,6 @@ class ContactCardPrint extends React.Component{
 export class ContactCard extends React.Component{
     constructor(props){
         super(props);
-        this.prioritizedMethods = props.contact ? Object.entries(props.contact)
-            .sort(([method1],[method2])=>(SORT_PRIORITY[method2]||0)-(SORT_PRIORITY[method1]||0)):[];
         this.state={
             revealed:null,
             print:window.matchMedia("print").matches
@@ -142,29 +140,32 @@ export class ContactCard extends React.Component{
         if(contact===revealed) this.setState({revealed:null});
         else this.setState({revealed:contact});
     }
-    renderTextPanels(){
+    renderTextPanels(prioritizedMethods){
         const {revealed} = this.state;
-        return this.prioritizedMethods.map(
+        return prioritizedMethods.map(
             ([method,target])=><ContactPanel key={method} method={method} revealed={method===revealed} contact={target}/>
         );
     }
-    renderButtons(){
+    renderButtons(prioritizedMethods){
         const {revealed} = this.state;
-        return this.prioritizedMethods.map(([method])=>
+        return prioritizedMethods.map(([method])=>
             <ContactButton onClick={this.onClick.bind(this)} className={method === revealed ? "toggled" : ""} key={method} method={method}/>
         );
     }
     render(){
         const {print} = this.state;
+        const prioritizedMethods = this.props.contact ? Object.entries(this.props.contact)
+            .sort(([method1],[method2])=>(SORT_PRIORITY[method2]||0)-(SORT_PRIORITY[method1]||0)):[];
         if(print){
-            return <ContactCardPrint contact={this.prioritizedMethods}/>
+            return <ContactCardPrint contact={prioritizedMethods}/>
         }
+        if(prioritizedMethods === null || prioritizedMethods.length === 0) return "";
         return (
             <div className="contact-frame">
-                {this.renderTextPanels()}
+                {this.renderTextPanels(prioritizedMethods)}
 
                 <span className="contact-card">
-                    {this.renderButtons()}
+                    {this.renderButtons(prioritizedMethods)}
                 </span>
 
             </div>

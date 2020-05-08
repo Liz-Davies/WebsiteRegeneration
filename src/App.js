@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import resume from './resume';
+// import resume from './resume';
 import {HexIconRowSet,HexPieRowSet} from './components/hex/HexRows.js';
 
 import { ExperienceSet } from './components/experience.js';
@@ -32,22 +32,53 @@ export class CookiePopup extends React.Component{
     }
 }
 
-
-function App() {
-    return (
-        <div className="App" onScroll={(e)=> console.log(`App scroll: ${e}`)}>
-            <TitleCard name={resume.about.proper_name}
+class Resume extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            resume : null,
+            loaded :false,
+            error_msg:null
+        }
+    }
+    componentDidMount(){
+        //post load to allow hot swapping resume.json
+        fetch(process.env.PUBLIC_URL+"/resume.json")
+            .then((res)=>res.json())
+            .then((res)=>{
+                this.setState({
+                    loaded:true,
+                    resume:res
+                })
+            },
+            (error)=>{
+                this.setState({
+                    loaded:true,
+                    error_msg:error
+                })
+            }
+        );
+    }
+    renderTitle(resume){
+        if(resume){
+            return <TitleCard name={resume.about.proper_name}
                 title={resume.about.title}
                 contactMethods={resume.about.contact}/>
-            <Navbar id="top-nav"/>
+        }else{
+            return <TitleCard/>
+        }
+
+    }
+    renderContent(resume){
+        if(resume===null) return "";
+        return[
             <div className="content-section" data-nav-title="About" id="about">
                 <div className="section-header"><h2 className="section-title">About</h2></div>
                 <p id="bio">
                     {resume.about.about_me}
                 </p>
-            </div>
+            </div>,
             <div className="content">
-
                 <div className="content-section" data-nav-title="Skills" id="skills">
                     <div className="section-header"><h2 className="section-title">Skills</h2></div>
                     <HexPieRowSet items={resume.skills}/>
@@ -69,6 +100,24 @@ function App() {
                     <HexIconRowSet items={resume.interests}/>
                 </div>
             </div>
+        ]
+    }
+
+    render(){
+        const {resume,error_msg,loaded} = this.state;
+        return [
+            this.renderTitle(resume),
+            <Navbar key={loaded ? "loaded" : "unloaded"} id="top-nav"/>,
+            (error_msg ? <div className="msg msg_err">{error_msg.toString()}</div>
+                : this.renderContent(resume))
+        ]
+    }
+}
+
+function App() {
+    return (
+        <div className="App">
+            <Resume/>
             <CookiePopup/>
             <footer>
                 <span>Made with React. Template created by Liz Davies.</span>

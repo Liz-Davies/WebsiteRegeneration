@@ -175,6 +175,9 @@ ul.nav-list{
     .navbar .nav-toggle{
         display:flex;
     }
+    .navbar.top .nav-list, .navbar.sticky .nav-list{
+        display:none;
+    }
 }
 
 @media only print{

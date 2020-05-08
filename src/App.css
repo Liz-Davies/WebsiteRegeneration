@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Unica+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root{
     --primary: #ac071c;
     --secondary: #677079;
@@ -18,7 +15,7 @@
     --colored-screen:#ac071c59;
     --tile-img:url('./TileableWatermelon2.png');
     --title-img:url('./components/close-up-concrete-flora-growth.jpg');
-    --display-font: 'Bebas Neue', cursive;
+    --display-font: 'Bebas Neue', sans-serif;
     /* 'Unica One', Helvetica, Sans-Serif; */
 
 }

@@ -10,6 +10,7 @@ import {ContactCard} from './contact.js';
 export default class TitleCard extends React.Component{
     render(){
         const {name,title,contactMethods,className} = this.props;
+        console.log(contactMethods)
         return (
             <div id="title" className={className}>
                 <div className="title-mask">

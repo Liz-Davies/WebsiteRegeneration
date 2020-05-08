@@ -18,7 +18,7 @@
     width:100%;
     height:calc(100vh - 63px);
     background:var(--primary);
-    background:var(--title-img);
+    background-image:var(--title-img);
     background-position:center;
     background-size:cover;
     color:var(--background);
@@ -26,6 +26,10 @@
     justify-content: center;
     align-items: center;
     position:relative;
+    box-sizing: border-box;
+}
+#title *{
+    box-sizing: border-box;
 }
 #title .contact-frame{
     position:absolute;
@@ -50,6 +54,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding:20px;
+    padding-bottom:100px;
 }
 .page-title hr{
     width:50%;

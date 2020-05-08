@@ -66,13 +66,13 @@ class ExperiencePosition extends React.Component{
     render(){
         const {startDate,endDate,title,experience} = this.props.position;
         return (
-            <span className={(experience && experience.length > 0 ? "" : "compact" )+" experience-position"}>
+            <div className={(experience && experience.length > 0 ? "" : "compact" )+" experience-position"}>
                 <span className="experience-date">{formatDate(startDate,endDate)}</span>
-                <span className="experience-detail">
+                <div className="experience-detail">
                     <span className="experience-title"><strong>{title}</strong></span>
                     {this.renderExpItems(experience)}
-                </span>
-            </span>
+                </div>
+            </div>
         );
     }
 }

@@ -36,11 +36,7 @@ ul.experience-items{
 }
 .experience-set> *{
     background:var(--background);
-    /* box-shadow: 4px 4px 5px var(--shadow,black); */
-    /* margin: 5px 10px; */
-    min-width: 300px;
     display:block;
-    /* padding: 20px; */
 }
 .experience .location{
     color:var(--secondary);
@@ -82,7 +78,17 @@ ul.experience-items{
     border-bottom:none;
     padding-bottom: 0px;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:425px){
+    .experience-position {
+        display:block;
+    }
+    .experience-position .experience-date{
+        border-right:none;
+        justify-content: flex-start;
+        padding:5px 10px;
+    }
+}
+@media screen and (min-width:425px) and (max-width:768px){
     .experience .date-range .date-end{
         display:block;
     }

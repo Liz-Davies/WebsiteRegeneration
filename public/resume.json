@@ -4,7 +4,7 @@
         "title":"Developer",
         "proper_name":"Sarah Elizabeth Davies",
         "location": "Ottawa, ON",
-        "about_me": "Already a Bachelor of Music graduate and soon-to-be Bachelor of Computer Science graduate I am looking for my next great adventure. Busker, opera singer, educator, and full-stack developer, it's been an adventure already, but I am looking forward to digging into development more and learning new technologies and perspectives. ",
+        "about_me": "Looking for my next great adventure. With degrees in computer science and music and experience as a full-stack developer, busker, opera singer, and educator, I am ready to leverage my creativity to dif deeper into the software development space and learn new technologies and perspectives.",
         "contact":{
             "github":"https://github.com/Liz-Davies",
             "email":"saraheedavies@gmail.com",
@@ -39,7 +39,7 @@
                 {
                     "endDate": "2019-08",
                     "experience": [
-                        "Worked independantly updating and creating in-house tools",
+                        "Worked independently updating and creating in-house tools",
                         "Created projects using Python, Django, Bash Scripting, and Docker"
                     ],
                     "title": "Developer Co-op",
@@ -206,7 +206,7 @@
                 {
 
                     "experience": [
-                        "Arranging talks and workshops to enrich Carleton Computer Science Students"
+                        "Arranged talks and workshops to enrich Carleton Computer Science Students"
                     ],
                     "title": "Interim Vice President of Academics",
                     "startDate": "2018-01",
@@ -214,7 +214,7 @@
                 },
                 {
                     "experience": [
-                        "Participating and on the spot volunteering at events"
+                        "Participated and on the spot volunteering at events"
                     ],
                     "title": "Member",
                     "startDate": "2016-09",
@@ -229,7 +229,7 @@
                 {
                     "endDate": "2018-04",
                     "experience": [
-                        "Honing and expanding my leadership skills"
+                        "Honed and expanded my leadership skills"
                     ],
                     "title": "Developing Leader",
                     "startDate": "2018-01"
@@ -305,19 +305,19 @@
             "name": "C++"
         },
         {
-            "percent":45,
+            "percent":75,
             "name":"SQL",
             "info":"Studied and used SQLite and PostgreSQL in academic contexts"
+        },
+        {
+            "percent":65,
+            "name":"MongoDB",
+            "info":"Worked with Mongo and Java an a professional environment and Mongo and Node in academic contexts"
         },
         {
             "percent":45,
             "name":"LDAP",
             "info":"Worked with ldap protocols in a professional environment working with OpenDj"
-        },
-        {
-            "percent":45,
-            "name":"MongoDB",
-            "info":"Worked with Mongo and Java an a professional environment and Mongo and Node in academic contexts"
         }
     ],
     "interests":[
@@ -334,7 +334,7 @@
             "icon":"dice-d20"
         },
         {
-            "name":"independant learning",
+            "name":"independent learning",
             "icon":"laptop-code"
         },
         {
